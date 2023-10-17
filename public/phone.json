@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Apple",
+        "image": "/image/1.jpg"
+    },
+    {
+        "title": "Dell",
+        "image": "/image/2.jpg"
+    },
+    {
+        "title": "Samsung",
+        "image": "/image/3.jpg"
+    },
+    {
+        "title": "Sony",
+        "image": "/image/4.jpg"
+    },
+    {
+        "title": "Xiaomi",
+        "image": "/image/5.jpg"
+    },
+    {
+        "title": "Asus",
+        "image": "/image/6.jpg"
+    }
+]
