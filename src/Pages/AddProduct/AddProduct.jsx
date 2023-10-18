@@ -9,35 +9,31 @@ const AddProduct = () => {
         const form = event.target;
 
         const name = form.name.value;
-        const quantity = form.quantity.value;
-        const supplier = form.supplier.value;
-        const taste = form.taste.value;
-        const category = form.category.value;
-        const details = form.details.value;
+        const brand = form.brand.value;
+        const type = form.type.value;
+        const price = form.price.value;
+        const description = form.description.value;
+        const rating = form.rating.value;
         const photo = form.photo.value;
 
-        const newCoffee = { name, quantity, supplier, taste, category, details, photo }
+        const newProduct = { name, brand, type, price, description, rating, photo }
 
-        console.log(newCoffee);
+        console.log(newProduct);
 
-        // send data to the server
-        fetch('https://coffee-store-server-74xiae2di-jhankarphero.vercel.app/coffee', {
+        //send data to the server
+        fetch('http://localhost:5000/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(newCoffee)
+            body: JSON.stringify(newProduct)
         })
             .then(res => res.json())
             .then(data => {
                 console.log(data);
                 if(data.insertedId){
-                    swal.fire({
-                        title: 'Success!',
-                        text: 'Coffee Added Successfully',
-                        icon: 'success',
-                        confirmButtonText: 'Cool'
-                      })
+                    swal("Good job!", " Product Added Successfully!", "success");
+                    form.reset()
                 }
             })
     }
