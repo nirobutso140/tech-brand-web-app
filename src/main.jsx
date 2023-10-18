@@ -14,6 +14,10 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Error from './Pages/Error/Error';
 import AuthProvider from './providers/AuthProvider';
+import PrivetRoute from './PrivetRoute/PrivetRoute';
+
+
+
 
 
 
@@ -29,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/addproduct",
-        element: <AddProduct/>,
+        element: <PrivetRoute><AddProduct/></PrivetRoute>,
       },
       {
         path: "/mycart",
