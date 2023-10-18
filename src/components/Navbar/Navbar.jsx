@@ -16,12 +16,12 @@ const Navbar = () => {
                     >Home</NavLink></li>
 
                   
-                            <li><NavLink to='/about'
+                            <li><NavLink to='/addproduct'
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "text-red-400 " : ""
                                 }
                             >Add Product</NavLink></li>
-                            <li><NavLink to='/team'
+                            <li><NavLink to='/mycart'
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "text-red-400 " : ""
                                 }
