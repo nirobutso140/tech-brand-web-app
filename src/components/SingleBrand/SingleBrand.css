@@ -1,0 +1,11 @@
+.carousel-item{
+    width: 300px;
+
+}
+.carousel{
+    width: 1200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid red;
+}

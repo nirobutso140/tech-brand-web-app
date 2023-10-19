@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import './Brands.css'
+import { Link } from "react-router-dom";
 const Brands = () => {
 
     const [phones, setPhones] = useState([])
@@ -20,7 +21,8 @@ const Brands = () => {
 
                     phones.map(phone => <>
 
-                        <div className="card w-96 bg-base-100 shadow-xl">
+                      <Link to={`brands/${phone.title}`}>
+                      <div className="card w-96 bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">
                                 <img src={phone.image} alt="Shoes" className="rounded-xl" />
                             </figure>
@@ -32,6 +34,8 @@ const Brands = () => {
                                 </div> */}
                             </div>
                         </div>
+                      </Link>
+                       
 
                     </>)
 

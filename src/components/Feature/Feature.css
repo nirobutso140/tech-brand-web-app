@@ -1,0 +1,26 @@
+.gallery_img{
+    width: 300px;
+}
+.our_gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    place-items: center;
+    justify-content: center;
+}
+.gallery_title{
+    font-size: 2rem;
+    color: rgb(255, 78, 214);;
+}
+
+@media only screen and (max-width: 768px) {
+    .our_gallery{
+       grid-template-columns: auto auto ;
+    }
+ }
+ 
+ @media only screen and (max-width: 600px) {
+    .our_gallery{
+         grid-template-columns: auto;
+      }
+ }

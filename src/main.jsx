@@ -15,6 +15,7 @@ import Register from './Pages/Register/Register';
 import Error from './Pages/Error/Error';
 import AuthProvider from './providers/AuthProvider';
 import PrivetRoute from './PrivetRoute/PrivetRoute';
+import SingleBrand from './components/SingleBrand/SingleBrand';
 
 
 
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register/>,
+      },
+      {
+        path: "/brands/:brand",
+        element: <SingleBrand/>,
       },
     ],
   },
