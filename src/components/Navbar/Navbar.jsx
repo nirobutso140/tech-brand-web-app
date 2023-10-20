@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <>
             <div className="navbar">
-                  <img className="nav_logo" src="image/techlogo.jpg" alt="" />
+                  <img className="nav_logo" src="/image/techlogo.jpg" alt="" />
                 <div className="links">
                     <li><NavLink to='/'
                         className={({ isActive, isPending }) =>
@@ -53,6 +53,7 @@ const Navbar = () => {
                         user ?
                             <>
                                 <span>{user.email}</span>
+                                <span>{user.name}</span>
                                 <button onClick={handleLogOut} className="btn btn-sm">Log out</button>
                             </>
                             :
