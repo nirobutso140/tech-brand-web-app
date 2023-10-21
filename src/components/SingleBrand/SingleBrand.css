@@ -8,3 +8,9 @@
     
     
 }
+.product{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    gap: 10px;
+}

@@ -1,25 +1,31 @@
 [
-    {
+    { 
+        "id": 1,
         "title": "Apple",
         "image": "/image/1.jpg"
     },
     {
+        "id": 2,
         "title": "Dell",
         "image": "/image/2.jpg"
     },
     {
+        "id": 3,
         "title": "Samsung",
         "image": "/image/3.jpg"
     },
     {
+        "id": 4,
         "title": "Sony",
         "image": "/image/4.jpg"
     },
     {
+        "id": 5,
         "title": "Xiaomi",
         "image": "/image/5.jpg"
     },
     {
+        "id": 6,
         "title": "Asus",
         "image": "/image/6.jpg"
     }

@@ -16,6 +16,8 @@ import Error from './Pages/Error/Error';
 import AuthProvider from './providers/AuthProvider';
 import PrivetRoute from './PrivetRoute/PrivetRoute';
 import SingleBrand from './components/SingleBrand/SingleBrand';
+import Details from './components/Details/Details';
+
 
 
 
@@ -38,7 +40,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/mycart",
-        element: <MyCart/>,
+        element: <PrivetRoute><MyCart/></PrivetRoute> ,
       },
       {
         path: "/login",
@@ -49,9 +51,14 @@ const router = createBrowserRouter([
         element: <Register/>,
       },
       {
-        path: "/brands/:brand",
+        path: "/brands/:id",
         element: <SingleBrand/>,
-        loader: () => fetch("http://localhost:5000/products")
+        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+      },
+      {
+        path: "/details/:brand",
+        element: <PrivetRoute><Details/></PrivetRoute> ,
+        loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand}`)
       },
     ],
   },

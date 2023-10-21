@@ -1,11 +1,13 @@
 
 
-import { useLoaderData } from 'react-router-dom';
+import {  useLoaderData } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './SingleBrand.css'
 
 const SingleBrand = () => {
 
     const product = useLoaderData()
+    console.log(product);
     //   const {name, brand, type, price, rating, photo, _id} = product
 
     return (
@@ -26,23 +28,29 @@ const SingleBrand = () => {
                 </div>
             </div>
             
-            <div className='grid md:grid-cols-2 gap-4'>
+            <div className='product'>
               {
-                product.map(item => <>
+                // product.map(item => <>
 
-                    <div className="card card-side bg-base-100 shadow-xl w-[500px]">
-                        <figure><img src={item.photo} className='w-[200px] h-full' alt="Movie" /></figure>
-                        <div className="card-body">
-                            <p>Brand: {item.brand}</p>
-                            <p>Name: {item.name}</p>
-                            <p>Type: {item.type}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Watch</button>
-                            </div>
-                        </div>
-                    </div>
-                </>)
+                //     <div className="card  card-side bg-base-100 shadow-xl w-[500px]">
+                //         <figure><img src={item.photo} className='w-[200px] h-full' alt="Movie" /></figure>
+                //         <div className="card-body">
+                //             <p>Brand: {item.brand}</p>
+                //             <p>Name: {item.name}</p>
+                //             <p>Type: {item.type}</p>
+                //             <p>Price: {item.price}</p>
+                //             <p>Rating: {item.rating}</p>
+                //             <div className="card-actions justify-end">
+                //                 <Link to={`/details/${item.brand}`}><button className="btn btn-primary">Details</button></Link>
+                //                 <button className="btn btn-primary">Update</button>
+                //             </div>
+                //         </div>
+                //     </div>
+                // </>)
+
+                <p>{product.brand}</p>
               }
+              
             </div>
      
 

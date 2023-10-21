@@ -35,13 +35,13 @@ const Brands = () => {
                             </div>
                         </div>
                       </Link>
-                       
+                      
 
                     </>)
 
                 }
             </div>
-
+             <br /><br />
         </>
     );
 };

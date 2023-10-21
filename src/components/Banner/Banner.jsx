@@ -9,6 +9,7 @@ const Banner = () => {
                     <p className='banner_desc'>Welcome to the forefront of technology innovation! Explore the latest breakthroughs, <br /> expert insights, and cutting-edge trends at our tech website</p>
                </div>
            </div>
+           <br /><br />
         </>
     );
 };
