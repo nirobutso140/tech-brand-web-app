@@ -1,0 +1,9 @@
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px
+}
+.details_desc{
+    margin-top: 30px;
+}
