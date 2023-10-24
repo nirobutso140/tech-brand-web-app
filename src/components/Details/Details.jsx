@@ -6,8 +6,8 @@ const Details = () => {
    const details = useLoaderData()
   console.log(details);
  
-   const name = details[0].name
-   console.log(name);
+//    const name = details[0].name
+   
 
   
    const handleAddToCard = () =>{
@@ -46,6 +46,7 @@ const Details = () => {
                 </>)
             }
         </div>
+
     );
 };
 

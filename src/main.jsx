@@ -17,6 +17,7 @@ import AuthProvider from './providers/AuthProvider';
 import PrivetRoute from './PrivetRoute/PrivetRoute';
 import SingleBrand from './components/SingleBrand/SingleBrand';
 import Details from './components/Details/Details';
+import Update from './components/Update/Update';
 
 
 
@@ -56,9 +57,14 @@ const router = createBrowserRouter([
         loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
       },
       {
-        path: "/details/:brand",
+        path: "/details/:_id",
         element: <PrivetRoute><Details/></PrivetRoute> ,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand}`)
+        loader: ({params}) => fetch(`http://localhost:5000/productDetails/${params._id}`)
+      },
+      {
+        path: "/update/:id",
+        element: <PrivetRoute><Update/></PrivetRoute> ,
+        loader: ({params}) => fetch(`http://localhost:5000/update/${params.id}`)
       },
     ],
   },

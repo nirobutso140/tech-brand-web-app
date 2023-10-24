@@ -42,8 +42,8 @@ const SingleBrand = () => {
                             <p>Price: {item.price}</p>
                             <p>Rating: {item.rating}</p>
                             <div className="card-actions justify-end">
-                                <Link to={`/details/${item.brand}`}><button className="btn btn-primary">Details</button></Link>
-                                <button className="btn btn-primary">Update</button>
+                                <Link to={`/details/${item._id}`}><button className="btn btn-primary">Details</button></Link>
+                                <Link to={`/update/${item._id}`}><button className="btn btn-primary">Update</button></Link> 
                             </div>
                         </div>
                     </div>

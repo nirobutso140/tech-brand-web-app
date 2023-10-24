@@ -33,7 +33,7 @@ const AddProduct = () => {
                 console.log(data);
                 if(data.insertedId){
                     swal("Good job!", " Product Added Successfully!", "success");
-                    form.reset()
+                    // form.reset()
                 }
             })
     }
