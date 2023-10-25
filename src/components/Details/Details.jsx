@@ -12,7 +12,7 @@ const Details = () => {
 
 
     const handleAddToCard = () => {
-        fetch('http://localhost:5000/mycart', {
+        fetch('https://technology-and-electronics-server-n1b5nuiw0-utsos-projects.vercel.app/mycart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

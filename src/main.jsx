@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: "/mycart",
         element: <PrivetRoute><MyCart/></PrivetRoute> ,
-        loader: () => fetch('http://localhost:5000/mycart')
+        loader: () => fetch('https://technology-and-electronics-server-n1b5nuiw0-utsos-projects.vercel.app/mycart')
       },
       {
         path: "/login",
@@ -55,17 +55,17 @@ const router = createBrowserRouter([
       {
         path: "/brands/:id",
         element: <SingleBrand/>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({params}) => fetch(`https://technology-and-electronics-server-n1b5nuiw0-utsos-projects.vercel.app/products/${params.id}`)
       },
       {
         path: "/details/:_id",
         element: <PrivetRoute><Details/></PrivetRoute> ,
-        loader: ({params}) => fetch(`http://localhost:5000/productDetails/${params._id}`)
+        loader: ({params}) => fetch(`https://technology-and-electronics-server-n1b5nuiw0-utsos-projects.vercel.app/productDetails/${params._id}`)
       },
       {
         path: "/update/:id",
         element: <PrivetRoute><Update/></PrivetRoute> ,
-        loader: ({params}) => fetch(`http://localhost:5000/update/${params.id}`)
+        loader: ({params}) => fetch(`https://technology-and-electronics-server-n1b5nuiw0-utsos-projects.vercel.app/update/${params.id}`)
       },
       
     
