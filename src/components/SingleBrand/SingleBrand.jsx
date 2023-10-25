@@ -29,7 +29,7 @@ const SingleBrand = () => {
             </div>
 
 
-           <div className='product'>
+           <div className='product our_gallery'>
            {
                 product.map(item => <>
 

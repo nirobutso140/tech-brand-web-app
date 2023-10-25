@@ -40,7 +40,7 @@ const Update = () => {
         <div>
             {
                 <div className="bg-[#F4F3F0] p-24">
-                    <h2 className="text-3xl font-extrabold">Add Product</h2>
+                    <h2 className="text-3xl font-extrabold">Update Product</h2>
                     <form onSubmit={handleUpdateProduct}>
                         {/* form name and quantity row */}
                         <div className="md:flex mb-8">
@@ -110,7 +110,7 @@ const Update = () => {
                                 </label>
                             </div>
                         </div>
-                        <input type="submit" value="Add Product" className="btn btn-block" />
+                        <input type="submit" value="Update Product" className="btn btn-block" />
 
                     </form>
                 </div>
